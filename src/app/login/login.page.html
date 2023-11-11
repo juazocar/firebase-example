@@ -20,7 +20,7 @@
       <h1 class="center">Autenticación</h1>
      </ion-item>
       <ion-item>
-        <ion-input label="Email : " type="email" placeholder="email@domain.com" [(ngModel)]="user.email" [value]="user.email" ></ion-input>
+        <ion-input label="Usuario : " type="email" placeholder="usuario..." [(ngModel)]="user.username" [value]="user.username" ></ion-input>
       </ion-item>
   
       <ion-item>
@@ -28,8 +28,9 @@
       </ion-item>
     </ion-list>
       
-    <ion-button (click)="signUp()" expand="full" color="primary"><ion-icon name="log-in-outline"></ion-icon> Login</ion-button>
-    
+    <ion-button (click)="login()" expand="full" color="primary"><ion-icon name="log-in-outline"></ion-icon> Login</ion-button>
+    <ion-button (click)="obtenerPersonajes()" expand="full" color="primary"><ion-icon name="log-in-outline"></ion-icon> Obtener Personajes</ion-button>
+
     
   
 
